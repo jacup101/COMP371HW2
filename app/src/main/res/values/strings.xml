@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">Homework2</string>
+    <string name="get_started">Get Started</string>
+    <string name="show_results">Show Results</string>
+    <string name="find_brew">Find Your Brew</string>
+    <string name="brewed">Brewed</string>
+    <string name="monthYear">mm/yyyy</string>
+    <string name="to">to</string>
+    <string name="search_by_name">Search By Beer Name</string>
+    <string name="high_point">High-Point Beer?</string>
+    <string name="name_place">Beer</string>
+    <string name="desc_place">The Best</string>
+    <string name="num_found">We found 0 results.</string>
+    <string name="beer_name_place">Bud Light</string>
+    <string name="beer_abv_place">ABV: 100%</string>
+    <string name="beer_first_brewed_place">First brewed: 20/2020</string>
+    <string name="beer_desc_place">Description: Hello!</string>
+    <string name="beer_food_pairings">Food Pairings: Taco</string>
+    <string name="beer_brewer_tips">Brewer\'s Tips: Yes</string>
+    <string name="hint">search</string>
+</resources>

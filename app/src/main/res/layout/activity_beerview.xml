@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ScrollView
+        android:id="@+id/beer_scroller"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:id="@+id/linear_beer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textView_beerName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/beer_name_place"
+                android:textSize="30sp"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:id="@+id/layout_abvFB"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:paddingTop="16dp">
+
+                <TextView
+                    android:id="@+id/textView_beerABV"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/beer_abv_place" />
+
+                <TextView
+                    android:id="@+id/textView_beerFB"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/beer_first_brewed_place" />
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/imageView_beer"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                tools:srcCompat="@tools:sample/avatars"
+                android:paddingTop="16dp"/>
+
+            <TextView
+                android:id="@+id/textView_beerDesc"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/beer_desc_place"
+                android:paddingTop="16dp" />
+
+            <TextView
+                android:id="@+id/textView_beerFoodPair"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/beer_food_pairings"
+                android:paddingTop="16dp" />
+
+            <TextView
+                android:id="@+id/textView_beerBTips"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/beer_brewer_tips"
+                android:paddingTop="16dp" />
+
+        </LinearLayout>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>
